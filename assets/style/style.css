@@ -2,12 +2,8 @@
     margin: 0;
     padding: 0;
 }
-@font-face {
-    font-family: fa;
-    src: url(https://fonts.googleapis.com/css?family=Nunito);
-}
 body {
-    font-family: fa;
+    font-family: 'Nunito', sans-serif;
 }
 .wrapper {
     width:100%;
@@ -93,8 +89,7 @@ body {
     color: #3cba58;
 }
 .img_wa {
-    width: 15px;
-    padding-top: 5px;
+    width: 14px;
 }
 .inner_2_text {
     padding-top: 20px;
@@ -104,7 +99,7 @@ body {
     padding-top: 20px;
 }
 .inner_2_text_2 {
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
 }
 
 /* Section 3.1 */
@@ -200,7 +195,7 @@ body {
         padding-top: 15px;
     }
     .inner_2_text_2 {
-        padding-bottom: 15px;;
+        padding-bottom: 15px;
     }
     .line {
         margin-top: 40px;
