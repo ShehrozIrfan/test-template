@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;">
+  <head style="margin: 0;padding: 0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="margin: 0;padding: 0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" style="margin: 0;padding: 0;">
+    <title style="margin: 0;padding: 0;">HTML Email</title>
+    <!-- adding nunito font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" style="margin: 0;padding: 0;">
+    <style>
+        /* Media Queries */
+@media screen and (max-width: 600px) {
+    .inner_1 {
+        margin-top: 30px!important;
+    }
+    .img_tick {
+        width: 18px!important;
+    }
+    .tick_text,.inner_2 {
+        font-size: 15px!important; 
+    }
+    .inner_1_t1 {
+        padding-top: 15px!important;
+        padding-bottom: 35px!important;
+    }
+    .inner_1_t1_text {
+        font-size: 15px!important;
+    }
+    .inner_4_text{
+        font-size: 15px!important;
+        padding: 5px!important;
+    } 
+    .inner_5_text {
+        padding: 10px!important;
+    }
+    .inner_5_link {
+        font-size: 15px!important;
+    }
+    .inner_2_text {
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+    }
+    .inner_2_text_1 {
+        padding-top: 15px!important;
+    }
+    .inner_2_text_2 {
+        padding-bottom: 15px!important;
+    }
+    .line {
+        margin-top: 40px!important;
+    }
+    .inner_3,.inner_1_t1 {
+        font-size: 15px!important;
+    }
+    .p_t {
+        padding-top: 15px!important;
+    }
+    .p_b {
+        padding-bottom: 15px!important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main_logo {
+        width: 150px!important;
+    } 
+    .inner_2 {
+        margin-bottom: 25px!important;
+    }
+    .inner_1_t1_text, .inner_2, .inner_4_text {
+        font-size: 12px!important; 
+    } 
+    .inner_4_text {
+        padding: 10px!important;
+        line-height: 1.2rem!important;
+        text-align: left!important;
+    }
+    .img_wa {
+        width: 12px!important;
+    }
+    .inner_2_text {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+    .inner_2_text_1 {
+        padding-top: 10px!important;
+    }
+    .inner_2_text_2 {
+        padding-bottom: 10px!important;
+    }
+    .line {
+        margin-top: 10px!important;
+    }
+    .inner_3,.inner_1_t1 {
+        font-size: 12px!important;
+    }
+    .p_t {
+        padding-top: 10px!important;
+    }
+    .p_b {
+        padding-bottom: 10px!important;
+    }
+    .box {
+        width: 100%!important;
+        padding-bottom: 20px!important;
+    }
+    .left {
+        float: none!important;
+        width: 100%!important; 
+    }
+    .right {
+        width: 100%!important;
+        padding-top: 10px!important;
+    }
+    .p_fix,.p_fix1 {
+        padding-bottom: 0px!important;
+    }
+    .box_1 {
+        padding-bottom: 0px!important;
+    }
+    .left_1 {
+        float: none!important;
+        width: 100%!important;
+        padding-bottom: 15px!important;
+    }
+    .b_pb {
+        padding-bottom: 15px!important;
+    }
+    .inner_6 {
+        margin-top: 35px!important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .img_tick {
+        padding-right: 5px!important;
+    }
+}
+@media screen and (max-width: 250px) {
+    .tick_text {
+        font-size: 12px!important;
+    }
+    .img_tick {
+        width: 12px!important;
+    }
+    .inner_1_t1 {
+        padding-bottom: 20px!important;
+    }
+    .inner_1_t1_text, .inner_2, .inner_4_text {
+        font-size: 10px!important; 
+    }
+    .inner_3,.inner_1_t1 {
+        font-size: 10px!important;
+    }
+    .inner_2 {
+        margin-bottom: 15px!important;
+    }
+    .box {
+        padding-bottom: 8px!important;
+    }
+    .left_1 {
+        float: none!important;
+        width: 100%!important;
+        padding-bottom: 8px!important;
+    }
+    .right {
+        width: 100%!important;
+        padding-top: 2px!important;
+    }
+    .b_pb {
+        padding-bottom: 8px!important;
+    }
+    .img_wa {
+        width: 8px!important;
+    }
+    .inner_3_h {
+        padding-bottom: 10px!important;
+    }
+    .inner_4_text {
+        padding: 5px!important;
+        line-height: 1rem!important;
+    }
+    .inner_5_text {
+        padding: 5px 10px 5px 10px!important;
+    }
+    .inner_5_link {
+        font-size: 12px!important;
+    }
+    .inner_5 {
+        margin-top: 15px!important;
+    }
+    .inner_6 {
+        margin-top: 20px!important;
+    }
+    .inner_6_t1_p1,.inner_6_t1_p2,.inner_6_t1_p3,.inner_6_t1_p4 {
+        font-size: 8px!important;
+    }
+    .img_wa_b {
+        width: 6px!important;
+    }
+}
+    </style>
+    
+  </head>
+  <body style="margin: 0;padding: 0;background-color: #f6f9fc;font-family: 'Nunito', sans-serif;">
+    <center class="wrapper" style="margin: 0;padding: 0;width: 100%;table-layout: fixed;background-color: #f6f9fc;padding-bottom: 40px;">
+      <div class="webkit" style="margin: 0;padding: 0;max-width: 600px;background-color: #ffffff;">
+        <table class="outer" align="center" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 100%;max-width: 600px;color: #4a4a4a;">
+          <!-- section 1 -->
+          <table class="outer" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 100%;max-width: 600px;color: #4a4a4a;">
+              <tr style="margin: 0;padding: 0;">
+              <td class="section_1" style="margin: 0;padding: 0;background: #3cba58;">
+                  <a href="#" style="margin: 0;padding: 0;">
+                      <img src="assets/images/logo.png" class="main_logo" style="margin: 0;padding: 0;width: 180px;">
+                  </a>
+              </td>
+          </tr>
+          </table>
+          <!-- section 2 -->
+          <table class="inner_1" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-family: sans-serif;margin-top: 50px;">
+              <tr style="margin: 0;padding: 0;">
+               <td style="margin: 0;padding: 0;"><img src="assets/images/tick.png" class="img_tick" style="margin: 0;padding: 0;width: 25px;"></td>
+               <td class="tick_text" style="margin: 0;padding: 0;color: #3cba58;font-size: 20px;font-weight: bold;">Entrevista agendada com sucesso!</td>
+              </tr>
+              <!-- inner_1_t_1 -->
+              <table class="inner_1_t1" style="margin: 0 auto;padding: 0;padding-top: 20px;padding-bottom: 50px;width: 90%;max-width: 600px;">
+                  <tr style="margin: 0;padding: 0;">
+                  <td style="margin: 0;padding: 0;"><p class="inner_1_t1_text t_color" style="margin: 0;padding: 0;color: #777B81;line-height: 1.5;">Basta comparecer no dia, hora e local marcado para realizar a entrevista.</p></td>
+              </tr>
+              </table>
+          </table>
+          <!-- section 3 -->
+          <table class="inner_2" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-size: 15px;margin-bottom: 40px;">
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box" style="margin: 0;padding: 0;width: 100%;padding-bottom: 20px;">
+                        <div class="left" style="margin: 0;padding: 0;float: left;width: 30%;">
+                            <p class="t_color" style="margin: 0;padding: 0;color: #777B81;">Data da entrevista</p>
+                        </div>
+                        <div class="right" style="margin: 0;padding: 0;">
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">Dia 28 de setembro, quarta-feira, às 09:00.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box" style="margin: 0;padding: 0;width: 100%;padding-bottom: 20px;">
+                        <div class="left" style="margin: 0;padding: 0;float: left;width: 30%;">
+                            <p class="t_color" style="margin: 0;padding: 0;color: #777B81;">Local da entrevista</p>
+                        </div>
+                        <div class="right" style="margin: 0;padding: 0;">
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">Na INCD</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box" style="margin: 0;padding: 0;width: 100%;padding-bottom: 20px;">
+                        <div class="left" style="margin: 0;padding: 0;float: left;width: 30%;">
+                            <p class="t_color p_fix1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 20px;">Endereco</p>
+                        </div>
+                        <div class="right" style="margin: 0;padding: 0;">
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">Rua Balsa, 601, Freguesia do O, Sao Paulo,CEP:02911-035</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box" style="margin: 0;padding: 0;width: 100%;padding-bottom: 20px;">
+                        <div class="left" style="margin: 0;padding: 0;float: left;width: 30%;">
+                            <p class="t_color p_fix" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 60px;">Pré requisitos</p>
+                        </div>
+                        <div class="right" style="margin: 0;padding: 0;">
+                            <p class="bold t_color" style="margin: 0;padding: 0;color: #777B81;font-weight: bold;">1 - O titular deve estar presente</p>
+                            <p class="bold t_color" style="margin: 0;padding: 0;color: #777B81;font-weight: bold;">2 - Envie por whatsapp our email foto do RG ou CNH.</p>
+                            <a href="orientacao foto document" class="green" style="margin: 0;padding: 0;color: #3cba58;">orientacao foto document</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box" style="margin: 0;padding: 0;width: 100%;padding-bottom: 20px;">
+                        <div class="left" style="margin: 0;padding: 0;float: left;width: 30%;">
+                            <p class="t_color" style="margin: 0;padding: 0;color: #777B81;">Dúvidas?</p>
+                        </div>
+                        <div class="right" style="margin: 0;padding: 0;">
+                            <table style="margin: 0;padding: 0;">
+                                <tr style="margin: 0;padding: 0;">
+                                    <td style="margin: 0;padding: 0;"><img src="assets/images/grey-whatsapp.png" class="img_wa" style="margin: 0;padding: 0;width: 14px;"></td>
+                                    <td style="margin: 0;padding: 0;">
+                                        <span class="t_color" style="margin: 0;padding: 0;color: #777B81;">  (11) 3931-4344</span>
+                                    </td>
+                                </tr>
+                                <tr style="margin: 0;padding: 0;">
+                                    <td colspan="2" style="margin: 0;padding: 0;">
+                                        <a href="mailto:agendamento@webdanfe.com.br" class="green" style="margin: 0;padding: 0;color: #3cba58;">agendamento@webdanfe.com.br</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;"><hr width="100%" class="line" style="margin: 0;padding: 0;margin-top: 30px;"></td>
+              </tr>
+          </table>
+          <!-- section 3.1 -->
+          <table class="inner_3" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-size: 15px;">
+            <tr style="margin: 0;padding: 0;">
+                <td class="bold t_color inner_3_h" style="margin: 0;padding: 0;color: #777B81;font-weight: bold;padding-bottom: 30px;">Detalhes do pedido:</td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box_1" style="margin: 0;padding: 0;padding-bottom: 30px;">
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Número do pedido</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">A264A841</p>
+                        </div>
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Data do pedido</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">22/09/2020 - 23:00</p>
+                        </div>
+                        <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box_1" style="margin: 0;padding: 0;padding-bottom: 30px;">
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Produto</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">e-CNPJ A3 + Cartão</p>
+                        </div>
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Validade</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">12 meses</p>
+                        </div>
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Valor total</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">R$163,00</p>
+                        </div>
+                        <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box_1" style="margin: 0;padding: 0;padding-bottom: 30px;">
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">CNPJ</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">23.074.086/0001-00</p>
+                        </div>
+                        <div class="left_1" style="margin: 0;padding: 0;float: left;width: 33.33%;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">CPF</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">332.197.038-4</p>
+                        </div>
+                        <div class="clear" style="margin: 0;padding: 0;clear: both;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box_1 b_pb" style="margin: 0;padding: 0;padding-bottom: 30px;">
+                        <div style="margin: 0;padding: 0;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Forma de pagamento</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">Boleto - Liquidado em 30/02/2018</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="margin: 0;padding: 0;">
+                <td style="margin: 0;padding: 0;">
+                    <div class="box_1 b_pb" style="margin: 0;padding: 0;padding-bottom: 30px;">
+                        <div style="margin: 0;padding: 0;">
+                            <p class="t_color p_b_1" style="margin: 0;padding: 0;color: #777B81;padding-bottom: 5px;">Documento de faturamento</p>
+                            <p class="bold" style="margin: 0;padding: 0;font-weight: bold;">23.074.086/0001-00</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+          </table>
+          <!-- section 4-->
+          <table class="inner_4" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-size: 15px;">
+            <tr style="margin: 0;padding: 0;">
+              <td style="margin: 0;padding: 0;">
+                <table class="inner_4_t1" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 100%;max-width: 600px;">
+                  <tr style="margin: 0;padding: 0;">
+                    <td style="margin: 0;padding: 0;">
+                      <div class="inner_4_text" style="margin: 0;padding: 10px 15px 10px 15px;background: #ffe199;color: #a78b47;text-align: left;border: 2px solid #ffca4c;line-height: 1.5rem;border-radius: 5px;font-weight: bold;">A nota fiscal será emitida após a aprovação documental do certificado</div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- section 5 -->
+          <table class="inner_5" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-size: 15px;margin-top: 30px;">
+            <tr style="margin: 0;padding: 0;">
+              <td style="margin: 0;padding: 0;">
+                <table class="inner_5_t1" style="margin: 0;padding: 0;">
+                  <tr style="margin: 0;padding: 0;">
+                    <td style="margin: 0;padding: 0;">
+                      <div class="inner_5_text" style="margin: 0;padding: 15px 20px 15px 20px;background: #3cba58;border-radius: 5px;">
+                        <a href="#" class="inner_5_link" style="margin: 0;padding: 0;color: white;font-weight: bold;text-decoration: none;font-size: 18px;">Agendar documentos fiscais</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- section 6 -->
+          <table class="inner_6" style="margin: 0 auto;padding: 0;border-spacing: 0;width: 90%;max-width: 600px;font-size: 15px;margin-top: 60px;">
+            <tr style="margin: 0;padding: 0;">
+              <td style="margin: 0;padding: 0;">
+                <table class="inner_6_t1" style="margin: 0;padding: 0;">
+                  <tr style="margin: 0;padding: 0;">
+                    <td class="inner_6_t1_p1 t_color" style="margin: 0;padding: 0;color: #777B81;font-size: 12px;text-align: left;">
+                      As informações contidas neste e-mail são de uso exclusivo da INCD e podem ter caráter privilegiado ou confidencial, ser de uso restrito e/ou legalmente protegidas. Se você recebeu esta mensagem por engano, não deve usar, copiar, alterar, divulgar, distribuir ou se beneficiar dessas informações. Solicitamos que você informe o remetente sobre o ocorrido e elimine esta mensagem imediatamente. A INCD se reserva o direito de pleitear ressarcimento pelos prejuízos decorrentes do uso indevido das informações aqui contidas e requerer a aplicação das penalidades cabíveis.
+                    </td>
+                  </tr>
+                  <tr style="margin: 0;padding: 0;">
+                    <td class="inner_6_t1_p2 t_color" style="margin: 0;padding: 0;color: #777B81;font-size: 12px;text-align: left;padding-top: 15px;padding-bottom: 15px;">
+                      Não responda a este email. Os emails enviados a este endereço não serão respondidos.
+                    </td>
+                  </tr>
+                  <tr style="margin: 0;padding: 0;">
+                    <td class="inner_6_t1_p3 t_color" style="margin: 0;padding: 0;color: #777B81;font-size: 12px;text-align: left;">
+                      Nosso horário de atendimento é de Seg-Sex das 9:00 - 18:00 pelos canais&nbsp; <span style="margin: 0;padding: 0;"><img src="assets/images/grey-whatsapp.png" class="img_wa_b" style="margin: 0;padding: 0;width: 8px;"></span> (11) 3931-4344 ou contato@incd.com.br
+                    </td>
+                  </tr>
+                  <tr style="margin: 0;padding: 0;">
+                    <td class="inner_6_t1_p4 t_color" style="margin: 0;padding: 0;color: #777B81;font-size: 12px;text-align: left;padding-top: 15px;padding-bottom: 15px;">
+                      Copyright © 2021 INCD - Instituto Nacional de Certificação Digital, Rua do Ouro, 215, Jevira, São Paulo, Brasil. Todos os direitos reservados.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </table><!-- outer table ends -->
+      </div><!-- webkit div ends -->
+    </center><!-- wrapper ends -->
+  </body>
+</html>
